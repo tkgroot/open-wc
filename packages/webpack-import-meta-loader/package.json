@@ -17,7 +17,7 @@
   "scripts": {
     "prepublishOnly": "../../scripts/insert-header.js",
     "test": "npm run test:node",
-    "test:node": "mocha --require @babel/register"
+    "test:node": "mocha test/**/*.test.js test/*.test.js"
   },
   "files": [
     "*.js",
