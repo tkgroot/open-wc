@@ -15,10 +15,17 @@ module.exports = {
             fileName: 'demo/custom-elements.json',
             source: fs.readFileSync(path.join(__dirname, '../custom-elements.json'), 'utf-8'),
           });
+
+          this.emitFile({
+            type: 'asset',
+            fileName: 'demo/assets/logo.png',
+            source: fs.readFileSync(path.join(__dirname, '../assets/logo.png')),
+          });
         },
       });
     }
   },
+  managerPath: require.resolve('../../manager.js'),
   esDevServer: {
     nodeResolve: true,
     watch: true,

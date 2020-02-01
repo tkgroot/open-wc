@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.37.0](https://github.com/open-wc/open-wc/compare/es-dev-server@1.36.4...es-dev-server@1.37.0) (2020-01-31)
+
+
+### Bug Fixes
+
+* skip brooken published versions ([25d21de](https://github.com/open-wc/open-wc/commit/25d21def522f22f98fc8c71b4c055617089c0e23))
+
+
+### Features
+
+* **es-dev-server:** properly resolve imports in inline modules ([2abde96](https://github.com/open-wc/open-wc/commit/2abde96787753185c67cd16c530bc7697716d917))
+* **es-dev-server:** use new polyfills loader ([f5a4036](https://github.com/open-wc/open-wc/commit/f5a40366c50b6fdc1b94514b1833f83096d0e893))
+
+
+
+
+
+## [1.36.4](https://github.com/open-wc/open-wc/compare/es-dev-server@1.36.3...es-dev-server@1.36.4) (2020-01-27)
+
+
+### Bug Fixes
+
+* **es-dev-server:** handle url parameters with . characters ([#1059](https://github.com/open-wc/open-wc/issues/1059)) ([#1278](https://github.com/open-wc/open-wc/issues/1278)) ([a0f3915](https://github.com/open-wc/open-wc/commit/a0f3915d299140e18066fd4dfdb3ad1ecbc5ebe7))
+
+
+
+
+
+## [1.36.3](https://github.com/open-wc/open-wc/compare/es-dev-server@1.36.2...es-dev-server@1.36.3) (2020-01-27)
+
+
+### Bug Fixes
+
+* **es-dev-server:** don't compatibility transform html requests ([#1277](https://github.com/open-wc/open-wc/issues/1277)) ([fcd529a](https://github.com/open-wc/open-wc/commit/fcd529a6148422d17b1ad0d140c46adcb10a010a))
+
+
+
+
+
 ## [1.36.2](https://github.com/open-wc/open-wc/compare/es-dev-server@1.36.1...es-dev-server@1.36.2) (2020-01-13)
 
 

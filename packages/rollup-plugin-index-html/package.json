@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-index-html",
-  "version": "1.7.5",
+  "version": "1.8.0",
   "publishConfig": {
     "access": "public"
   },
@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "@import-maps/resolve": "^0.2.1",
-    "@open-wc/building-utils": "^2.11.0",
+    "@open-wc/building-utils": "^2.13.0",
     "deepmerge": "^3.2.0",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0",
@@ -39,7 +39,7 @@
     "parse5": "^5.1.0"
   },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "@webcomponents/webcomponentsjs": "^2.4.0",
     "chai": "^4.2.0",
     "intersection-observer": "^0.7.0",
     "mocha": "^6.2.2",
