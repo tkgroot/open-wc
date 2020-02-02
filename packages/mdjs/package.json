@@ -1,0 +1,49 @@
+{
+  "name": "@mdjs/core",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Combine Markdown with JavaScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-wc/open-wc.git",
+    "directory": "packages/mdjs"
+  },
+  "author": "open-wc",
+  "homepage": "https://github.com/open-wc/open-wc/",
+  "scripts": {
+    "build": "rimraf dist && babel src --out-dir dist --copy-files --include-dotfiles",
+    "prepublishOnly": "npm run build && ../../scripts/insert-header.js",
+    "start": "npm run build && node ./dist/create.js",
+    "test": "npm run test:node",
+    "test:node": "mocha --require @babel/register",
+    "test:update-snapshots": "node -r @babel/register ./test/update-snapshots.js",
+    "test:watch": "onchange 'src/**/*.js' 'test/**/*.js' -- npm run test --silent"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "open-wc"
+  ],
+  "dependencies": {
+    "@babel/parser": "^7.7.0",
+    "@babel/traverse": "^7.7.0",
+    "entities": "~2.0",
+    "mdurl": "~1.0.1",
+    "minimist": "~1.2.0",
+    "string.prototype.repeat": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-plugin-transform-dynamic-import": "^2.1.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "onchange": "^5.2.0",
+    "rimraf": "^3.0.0"
+  }
+}
