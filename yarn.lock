@@ -18304,10 +18304,10 @@ storybook-chromatic@^2.2.2:
     tree-kill "^1.1.0"
     uuid "^3.3.2"
 
-storybook-prebuilt@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/storybook-prebuilt/-/storybook-prebuilt-1.3.0.tgz#6a6d2c17dd934c4dc36ca66ec3f2d1c930342dfe"
-  integrity sha512-O7+bJ/iniEnNoWXTk6NGPq1j2ztCpb8xlAHI9KEUf400p5PW9IHtEFdZsC2CxLXiJC9+byXq1gmPgIMwmag8ig==
+storybook-prebuilt@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/storybook-prebuilt/-/storybook-prebuilt-1.5.0.tgz#a2f1c918d83fbc826b065e67d475d3f57aae6932"
+  integrity sha512-po8MuZPPSEMnhounTVpawie4c3oRYVnNBHgwojab+5DKCy+yQ/OGgreOYULlOhwufqibGeQ6I9TX+MhGPLeZEA==
   dependencies:
     lit-html "^1.0.0"
 
