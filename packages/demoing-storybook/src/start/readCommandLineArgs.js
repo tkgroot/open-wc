@@ -68,6 +68,12 @@ module.exports = function readCommandLineArgs() {
     { name: 'help', type: Boolean, description: 'See all options' },
   ];
 
+  const tableOptions = {
+    columns: [
+      { name: 'option', noWrap: true, minWidth: 40 },
+      { name: 'description', minWidth: 40 },
+    ],
+  };
   const storybookArgs = commandLineArgs(cliOptions, { partial: true });
   storybookArgs.stories =
     typeof storybookArgs.stories === 'string' ? [storybookArgs.stories] : storybookArgs.stories;
@@ -87,11 +93,12 @@ module.exports = function readCommandLineArgs() {
         {
           header: 'storybook options',
           optionList: cliOptions,
+          tableOptions,
         },
         {
           header: 'es-dev-server options',
-          content: '',
           optionList: esDevServerCliOptions,
+          tableOptions,
         },
       ]),
     );
